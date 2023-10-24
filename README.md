@@ -5,4 +5,4 @@ terraform show
 ```
 
 # What is the remote backend?
-you can store the state file in the backend instead of the state file created on a VM or laptop. The state file would be hosted in the s3 bucket by restricting the s3 bucket. when changes are made it automatically updates the s3 buckets
+you can store the state file in the backend instead of the state file created on a VM or laptop. The state file would be hosted in the s3 bucket by restricting access of s3 bucket. when changes are made it automatically updates the s3 buckets
