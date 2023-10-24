@@ -13,5 +13,5 @@ The locking mechanism is important so that multiple people are trying to execute
 provisioners are a kind of resource we can execute actions and implement during the creation and also during destruction.
 local exec is used to copy the output to a particular file.
 remote exec is where you can connect to the resource and execute commands like installing Python and Java.
-file provisioners are used to copy 
+File provisioner to copy a file from local to the remote EC2 instance
 
