@@ -8,4 +8,10 @@ terraform show
 you can store the state file in the backend instead of the state file created on a VM or laptop. The state file would be hosted in the s3 bucket by restricting access to the S3 bucket. when changes are made it automatically updates the s3 buckets
 
 # What is a lock?
-The locking mechanism is important so that multiple people are trying to execute the same project only one person can execute at a time and locking mechanism can be implemented using Dynamo DB.
+The locking mechanism is important so that multiple people are trying to execute the same project only one person can execute it at a time and the locking mechanism can be implemented using Dynamo DB.
+# What are provisioners?
+provisioners are a kind of resource we can execute actions and implement during the creation and also during destruction.
+local exec is used to copy the output to a particular file.
+remote exec is where you can connect to the resource and execute commands like installing Python and Java.
+file provisioners are used to copy 
+
