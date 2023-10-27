@@ -16,3 +16,5 @@ remote exec is where you can connect to the resource and execute commands like i
 
 File provisioner to copy a file from local to the remote EC2 instance. The file provisioner is used to copy files or directories from the local machine to a remote machine. This is useful for deploying configuration files, scripts, or other assets to a provisioned instance.
 
+# Terraform workspaces?
+it maintains the state file for a different environment like staging, pre-prod, production, etc. if we don't use the workspaces then the particular environment state file will update/override or it will delete the resource and re-create the resource.
