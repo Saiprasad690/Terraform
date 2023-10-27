@@ -28,3 +28,10 @@ switching betweens
 ```
 terraform workspace select dev
 ```
+for different environment workspace for creation and destroy
+```
+terraform apply -var-file=dev.tfvars
+```
+```
+terraform apply -var-file=stage.tfvars
+```
