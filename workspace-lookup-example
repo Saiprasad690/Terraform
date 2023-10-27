@@ -24,3 +24,5 @@ module "aws_instance" {
   ami_value = var.ami_value
   instance_type = lookup(var.instance_type, terraform.workspace, "t2.mciro")
 }
+
+# also give me ami id in tfvars for execution
