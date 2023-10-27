@@ -18,3 +18,7 @@ File provisioner to copy a file from local to the remote EC2 instance. The file 
 
 # Terraform workspaces?
 it maintains the state file for a different environment like staging, pre-prod, production, etc. if we don't use the workspaces then the particular environment state file will update/override or it will delete the resource and re-create the resource.
+
+```
+terraform workspace new dev
+```
