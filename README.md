@@ -22,3 +22,7 @@ it maintains the state file for a different environment like staging, pre-prod, 
 ```
 terraform workspace new dev
 ```
+switching betweens
+```
+terraform workspace select dev
+```
