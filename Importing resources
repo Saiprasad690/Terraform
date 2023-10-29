@@ -12,9 +12,9 @@ to = aws_instance.example
 }
 and then terraform init
 ```
-terraform plan -generate-config-out=*generated_resources.tf*
+terraform plan -generate-config-out=generated_resources.tf
 ```
-A generated file is created and now copies the entire resource from the resources to the bottom and in the main.tf delete the import block and paste the resources from generated files.
+A generated file is created and now copy the entire resource from the resources field to the bottom and in the main.tf delete the import block and generated file also,  and paste the resources from generated files.
 ```
 terraform plan  
 ```
@@ -22,4 +22,4 @@ but Terraform doesn't know because the state file is still missing
 ```
 terraform import aws_instance.example i-0423979eb3b48985c
 ```
-
+---------------------------------DONE--------------------------------------
