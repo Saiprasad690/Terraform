@@ -1,0 +1,16 @@
+Terrafrom drift?
+If someone makes manual changes to the resource and terraform state file doesn't know the change
+```
+terraform refresh
+```
+which allows to refresh the state file by setting up a cron job like for every 3 hours or once a day.
+Terraform refresh command will update the statefile
+
+
+scenario-2a
+configure strict I AM Rules
+
+2b
+setting up some audit logs and performance automation where you can identify if someone makes manual changes to the resources that are configure by the terraform. 
+eg: if a resource is managed by the terraform and someone makes any manual changes(I AM) to the resource. In lambda function we can verify the list of resource that are managed by the terraform.
+Lambda funtion will go to the audit logs and identify unwanted changes and notify to the team members.
