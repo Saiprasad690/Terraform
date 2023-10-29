@@ -1,0 +1,25 @@
+# Importing resources from AWS to terraform
+Let's say I have already had Ec2 instance running on AWS
+create a terraform main.tf file and
+provider"aws"{
+  region = "us-east-1"
+}
+
+import {
+ id = "aws_instance_id"
+
+to = aws_instance.example
+}
+and then terraform init
+```
+terraform plan -generate-config-out=*generated_resources.tf*
+```
+A generated file is created and now copies the entire resource from the resources to the bottom and in the main.tf delete the import block and paste the resources from generated files.
+```
+terraform plan  
+```
+but Terraform doesn't know because the state file is still missing
+```
+terraform import aws_instance.example i-0423979eb3b48985c
+```
+
